@@ -1,17 +1,17 @@
 // ==UserScript==
 
 // @name               a.bili.online.ads.up
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.online.ads.up.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.online.ads.up.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
 // @description        w
-// @license            MIT
-// @author             nox
-// @copyright          2023, nox (https://github.com/orisgh)
-// @namespace          https://github.com/orisgh
 // @homepageURL        https://github.com/orisgh/nox.user.script
-// @downloadURL        https://raw.githubusercontent.com/orisgh/nox.user.js/master/dist/w.user.js
-// @updateURL          https://raw.githubusercontent.com/orisgh/nox.user.js/master/dist/w.user.js
+// @namespace          https://github.com/orisgh
+// @copyright          2023, nox (https://github.com/orisgh)
+// @author             nox
+// @license            MIT
 
 // @grant              none
 
