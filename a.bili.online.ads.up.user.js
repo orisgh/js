@@ -24,9 +24,9 @@
 // ==/UserScript==
 
 (function () {
-	'use strict';
+    'use strict';
 
-	let blockList = `
+    let blockList = `
 
 oooooooooooooooo1111
 
