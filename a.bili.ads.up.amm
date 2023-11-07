@@ -7,11 +7,11 @@
 // @version            2023.1107
 
 // @description        w
-// @homepageURL        https://github.com/orisgh/nox.user.script
-// @namespace          https://github.com/orisgh
-// @copyright          2023, nox (https://github.com/orisgh)
 // @author             nox
 // @license            MIT
+// @namespace          https://github.com/orisgh
+// @copyright          2023, nox (https://github.com/orisgh)
+// @homepageURL        https://github.com/orisgh/nox.user.js
 
 // @noframes
 // @grant              none
