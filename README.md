@@ -24,6 +24,8 @@
 
 // ==/UserScript==
 
+// @run-at             document-start
+
 ```
 
 ```js
@@ -37,12 +39,12 @@
 
     aaaaaaaa();
 
-    setTimeout(4000);
-    setTimeout(8000);
+    setTimeout(aaaaaaaa, 4000);
+    setTimeout(aaaaaaaa, 8000);
 
     document.addEventListener("visibilitychange", function () {
         if (document.visibilityState === "visible") {
-            setTimeout(1000);
+            setTimeout(aaaaaaaa, 1000);
         }
     });
 
@@ -68,5 +70,6 @@
     });
 
 })();
+
 
 ```
