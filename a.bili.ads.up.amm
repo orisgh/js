@@ -13,10 +13,9 @@
 // @author             nox
 // @license            MIT
 
+// @noframes
 // @grant              none
-
 // @connect            none
-
 // @require            none
 
 // @match              https://www.bilibili.com/
