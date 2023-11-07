@@ -9,18 +9,13 @@
 // @license            MIT
 // @namespace          https://github.com/orisgh
 // @copyright          2023, nox (https://github.com/orisgh)
-// @homepageURL        https://github.com/orisgh/nox.user.script
+// @homepageURL        https://github.com/orisgh/nox.user.js
 
 // @noframes
 // @grant              none
 // @connect            none
 // @require            none
 ```
-
-```js
-// @run-at             document-start
-```
-
 ```js
 (function () {
     'use strict';
@@ -31,7 +26,6 @@
 
 })();
 ```
-
 ```js
     aaaaaaaa();
 
@@ -67,4 +61,22 @@
 
 })();
 
+```
+```js
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
+// @run-at             document-start
+// @version            2023.1107
+
+// @description        w
+// @author             nox
+// @license            MIT
+// @namespace          https://github.com/orisgh
+// @copyright          2023, nox (https://github.com/orisgh)
+// @homepageURL        https://github.com/orisgh/nox.user.js
+
+// @noframes
+// @grant              none
+// @connect            none
+// @require            none
 ```
