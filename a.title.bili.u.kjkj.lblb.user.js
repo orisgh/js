@@ -11,7 +11,7 @@
 // @license            MIT
 // @namespace          https://github.com/orisgh
 // @copyright          2023, nox (https://github.com/orisgh)
-// @homepageURL        https://github.com/orisgh/nox.user.script
+// @homepageURL        https://github.com/orisgh/nox.user.js
 
 // @noframes
 // @grant              none
