@@ -1,17 +1,17 @@
 // ==UserScript==
 
 // @name               a.bili.ads.ad
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
 // @run-at             document-idle
 // @version            2023.10
-// @description        w
 
-// @license            MIT
-// @author             nox
-// @copyright          2023, nox (https://github.com/orisgh)
-// @namespace          https://github.com/orisgh
+// @description        w
 // @homepageURL        https://github.com/orisgh/nox.user.script
-// @downloadURL        https://raw.githubusercontent.com/orisgh/nox.user.js/master/dist/w.user.js
-// @updateURL          https://raw.githubusercontent.com/orisgh/nox.user.js/master/dist/w.user.js
+// @namespace          https://github.com/orisgh
+// @copyright          2023, nox (https://github.com/orisgh)
+// @author             nox
+// @license            MIT
 
 // @grant              none
 
@@ -56,14 +56,12 @@
 `.trim().split('\n');
 
     function aaaaaaaa() {
-
         for (const selector of blockList) {
             const elements = document.querySelectorAll(selector);
             for (const element of elements) {
                 element.style.display = 'none';
             }
         }
-
     }
 
     aaaaaaaa();
