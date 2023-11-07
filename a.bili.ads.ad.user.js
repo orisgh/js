@@ -4,7 +4,7 @@
 // @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
 // @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
 // @run-at             document-idle
-// @version            2023.10
+// @version            2023.1107
 
 // @description        w
 // @homepageURL        https://github.com/orisgh/nox.user.script
