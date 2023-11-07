@@ -1,8 +1,4 @@
 ```js
-
-// ==UserScript==
-
-// @name               w
 // @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @run-at             document-idle
@@ -19,17 +15,13 @@
 // @grant              none
 // @connect            none
 // @require            none
-
-// @match              https://www.w.com/*
-
-// ==/UserScript==
-
-// @run-at             document-start
-
 ```
 
 ```js
+// @run-at             document-start
+```
 
+```js
 (function () {
     'use strict';
 
@@ -37,6 +29,10 @@
         // code
     }
 
+})();
+```
+
+```js
     aaaaaaaa();
 
     setTimeout(aaaaaaaa, 4000);
@@ -70,6 +66,5 @@
     });
 
 })();
-
 
 ```
