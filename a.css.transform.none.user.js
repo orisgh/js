@@ -18,7 +18,7 @@
 // @connect            none
 // @require            none
 
-// @match              w
+// @match              https://*.bilibili.com/*
 
 // ==/UserScript==
 
