@@ -18,8 +18,6 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.bilibili.com/video/BV*
-// @match              https://www.ixigua.com/home/*
 // @match              w
 // @match              w
 // @match              w
