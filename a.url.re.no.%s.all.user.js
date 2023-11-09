@@ -36,9 +36,11 @@
 // ==/UserScript==
 
 function aaaaaaaa() {
+
     let url = new URL(window.location.href);
     url.search = '';
     window.history.replaceState({}, document.title, url.href);
+
 }
 
 aaaaaaaa();
@@ -50,4 +52,5 @@ document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") {
         setTimeout(aaaaaaaa, 1000);
     }
+
 });
