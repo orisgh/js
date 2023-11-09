@@ -32,9 +32,6 @@
 // @match              w
 // @match              w
 // @match              w
-// @match              w
-// @match              w
-// @match              w
 
 // ==/UserScript==
 
