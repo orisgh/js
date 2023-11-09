@@ -29,10 +29,6 @@
 // @match              w
 // @match              w
 // @match              w
-// @match              w
-// @match              w
-// @match              w
-// @match              w
 
 // ==/UserScript==
 
@@ -50,33 +46,25 @@ function aaaaaaaa() {
 
     const url = new URL(window.location.href);
     const params = new URLSearchParams(url.search);
-
     for (let param of params.keys()) {
         if (!whitelist.includes(param)) {
             params.delete(param);
         }
     }
-
     url.search = params.toString();
-
     url.pathname = url.pathname.replace(/\/$/, '');
-
     window.history.replaceState(null, null, url.toString());
 
 }
 
 aaaaaaaa();
 
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+
 document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") {
-        aaaaaaaa();
+        setTimeout(aaaaaaaa, 1000);
     }
-});
 
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'Control') {
-        if (!event.repeat) {
-            aaaaaaaa();
-        }
-    }
 });
