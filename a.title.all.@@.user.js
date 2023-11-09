@@ -18,16 +18,15 @@
 // @connect            none
 // @require            none
 
+// @match              https://cn.pornhub.com/model/*
+// @match              https://www.pornhub.com/model/*
+
+// @match              https://live.bilibili.com/*
 // @match              https://www.youtube.com/@*
 // @match              https://www.youtube.com/c/*
 // @match              https://www.ixigua.com/home/*
 // @match              https://haokan.baidu.com/author/*
-// @match              https://cn.pornhub.com/model/*
-// @match              https://www.pornhub.com/model/*
-// @match              https://live.bilibili.com/*
-// @match              w
-// @match              w
-// @match              w
+
 // @match              w
 // @match              w
 // @match              w
