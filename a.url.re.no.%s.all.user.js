@@ -18,15 +18,19 @@
 // @connect            none
 // @require            none
 
+// @match              https://www.bilibili.com/video/BV*
+// @match              https://live.bilibili.com/*
+// @match              https://space.bilibili.com/*/dynamic*
+// @match              https://message.bilibili.com/?spm_id_from=*
+
+// @match              https://www.ixigua.com/home/*
+// @match              https://www.ixigua.com/*
+
 // @match              https://movie.douban.com/*
 // @match              https://www.imdb.com/*
-// @match              https://shidian.baike.com/*
-// @match              https://live.bilibili.com/*
 
-// @match              https://space.bilibili.com/*/dynamic*
-// @match              https://www.bilibili.com/video/BV*
-// @match              https://message.bilibili.com/?spm_id_from=*
-// @match              https://www.ixigua.com/*
+// @match              https://shidian.baike.com/*
+
 // @match              w
 // @match              w
 // @match              w
@@ -39,6 +43,9 @@ function aaaaaaaa() {
 
     let url = new URL(window.location.href);
     url.search = '';
+    if (url.pathname.endsWith('/')) {
+        url.pathname = url.pathname.slice(0, -1);
+    }
     window.history.replaceState({}, document.title, url.href);
 
 }
