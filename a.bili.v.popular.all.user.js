@@ -25,7 +25,7 @@
 (function () {
     'use strict';
 
-    function aaaaaaaa () {
+    function aaaaaaaa() {
 
         let cards = document.querySelectorAll('.card-list > .video-card, .video-list > .video-card');
         for (let i = 0; i < cards.length; i++) {

@@ -24,7 +24,7 @@
 
 let lastCtrlPressTime = 0;
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Control') {
         lastCtrlPressTime = new Date().getTime();
     } else if (event.key === 'd') {

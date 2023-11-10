@@ -42,7 +42,7 @@
         }
     });
 
-    document.addEventListener('keydown', function(event) {
+    document.addEventListener('keydown', function (event) {
         if (event.altKey) {
             aaaaaaaa();
         }

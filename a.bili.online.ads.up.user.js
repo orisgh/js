@@ -23,9 +23,9 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+	'use strict';
 
-    let blockList = `
+	let blockList = `
 
 oooooooooooooooo1111
 
@@ -112,7 +112,7 @@ oooooooooooooooo9999
 	let ctrlDown = false;
 	let otherKeyDown = false;
 
-	document.addEventListener('keydown', function(event) {
+	document.addEventListener('keydown', function (event) {
 		if (event.key === 'Control') {
 			ctrlDown = true;
 		} else {
@@ -120,7 +120,7 @@ oooooooooooooooo9999
 		}
 	});
 
-	document.addEventListener('keyup', function(event) {
+	document.addEventListener('keyup', function (event) {
 		if (event.key === 'Control') {
 			if (ctrlDown && !otherKeyDown) {
 				aaaaaaaa();

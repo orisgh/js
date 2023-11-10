@@ -16,6 +16,7 @@
 // @connect            none
 // @require            none
 ```
+
 ```js
 (function () {
     'use strict';
@@ -26,6 +27,7 @@
 
 })();
 ```
+
 ```js
     aaaaaaaa();
 
@@ -62,6 +64,7 @@
 })();
 
 ```
+
 ```js
 // @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js

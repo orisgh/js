@@ -36,11 +36,11 @@ style2.innerHTML = `
         }
     `;
 
-setTimeout(function() {
+setTimeout(function () {
     document.head.appendChild(style1);
 }, 8000);
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navTitleText = document.querySelector('.nav-title-text');
 
     navTitleText.addEventListener('click', function () {
