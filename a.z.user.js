@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.zzzz
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.zzzz.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.zzzz.user.js
+// @name               a.z
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @run-at             document-idle
 // @version            2023.11
 
