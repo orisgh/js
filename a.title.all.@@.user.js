@@ -64,30 +64,19 @@ h1
 
     document.addEventListener("visibilitychange", function () {
         if (document.visibilityState === "visible") {
-            setTimeout(1000);
+            setTimeout(aaaaaaaa, 1000);
         }
     });
-
-    let ctrlDown = false;
-    let otherKeyDown = false;
 
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'Control') {
-            ctrlDown = true;
-        } else {
-            otherKeyDown = true;
+        if (event.altKey) {
+            aaaaaaaa();
         }
     });
 
-    document.addEventListener('keyup', function (event) {
-        if (event.key === 'Control') {
-            if (ctrlDown && !otherKeyDown) {
-                aaaaaaaa();
-            }
-            ctrlDown = false;
-            otherKeyDown = false;
-        } else {
-            otherKeyDown = false;
+    document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey) {
+            aaaaaaaa();
         }
     });
 

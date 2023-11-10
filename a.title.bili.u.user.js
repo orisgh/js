@@ -39,36 +39,23 @@ function aaaaaaaa() {
 
 aaaaaaaa();
 
-setTimeout(4000);
-setTimeout(8000);
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+        setTimeout(aaaaaaaa, 1000);
+    }
+});
+
+document.addEventListener('keydown', function (event) {
     if (event.altKey) {
         aaaaaaaa();
     }
 });
 
-document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(1000);
-    }
-});
-
-let ctrlDown = false;
-let ctrlDownTime = 0;
-
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'Control') {
-        ctrlDown = true;
-        ctrlDownTime = Date.now();
-    }
-});
-
-document.addEventListener('keyup', function (event) {
-    if (event.key === 'Control') {
-        ctrlDown = false;
-        if (Date.now() - ctrlDownTime < 500) {
-            aaaaaaaa();
-        }
+    if (event.ctrlKey) {
+        aaaaaaaa();
     }
 });

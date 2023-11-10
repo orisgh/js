@@ -75,20 +75,8 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-let ctrlDown = false;
-let ctrlDownTime = 0;
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'Control') {
-        ctrlDown = true;
-        ctrlDownTime = Date.now();
+    if (event.ctrlKey) {
+        aaaaaaaa();
     }
-});
-document.addEventListener('keyup', function (event) {
-    if (event.key === 'Control') {
-        ctrlDown = false;
-        if (Date.now() - ctrlDownTime < 500) {
-            aaaaaaaa();
-        }
-    }
-
 });

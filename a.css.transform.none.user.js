@@ -69,24 +69,9 @@
         }
     });
 
-    let ctrlDown = false;
-    let otherKeyDown = false;
     document.addEventListener('keydown', function (event) {
-        if (event.key === 'Control') {
-            ctrlDown = true;
-        } else {
-            otherKeyDown = true;
-        }
-    });
-    document.addEventListener('keyup', function (event) {
-        if (event.key === 'Control') {
-            if (ctrlDown && !otherKeyDown) {
-                aaaaaaaa();
-            }
-            ctrlDown = false;
-            otherKeyDown = false;
-        } else {
-            otherKeyDown = false;
+        if (event.ctrlKey) {
+            aaaaaaaa();
         }
     });
 

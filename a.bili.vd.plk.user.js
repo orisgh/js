@@ -22,28 +22,32 @@
 
 // ==/UserScript==
 
-const style1 = document.createElement('style');
-style1.innerHTML = `
+function updateStyle(id, css) {
+    let style = document.getElementById(id);
+
+    if (!style) {
+        style = document.createElement('style');
+        style.id = id;
+        document.head.appendChild(style);
+    }
+
+    style.innerHTML = css;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    updateStyle('style', `
         .main-reply-box {
             display: none !important;
         }
-    `;
+    `);
 
-const style2 = document.createElement('style');
-style2.innerHTML = `
-        #comment .main-reply-box {
-            display: block !important;
-        }
-    `;
-
-setTimeout(function () {
-    document.head.appendChild(style1);
-}, 8000);
-
-document.addEventListener('DOMContentLoaded', function () {
     const navTitleText = document.querySelector('.nav-title-text');
 
     navTitleText.addEventListener('click', function () {
-        document.head.appendChild(style2);
+        updateStyle('style', `
+            #comment .main-reply-box {
+                display: block !important;
+            }
+        `);
     });
 });

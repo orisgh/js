@@ -68,7 +68,8 @@ oooooooooooooooozzzz
 
     aaaaaaaa();
 
-    setTimeout(aaaaaaaa, 5000);
+    setTimeout(aaaaaaaa, 4000);
+    setTimeout(aaaaaaaa, 8000);
 
     document.addEventListener("visibilitychange", function () {
         if (document.visibilityState === "visible") {
@@ -76,26 +77,15 @@ oooooooooooooooozzzz
         }
     });
 
-    let ctrlDown = false;
-    let otherKeyDown = false;
-
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Control') {
-            ctrlDown = true;
-        } else {
-            otherKeyDown = true;
+    document.addEventListener('keydown', function (event) {
+        if (event.altKey) {
+            aaaaaaaa();
         }
     });
 
-    document.addEventListener('keyup', function (e) {
-        if (e.key === 'Control') {
-            if (ctrlDown && !otherKeyDown) {
-                aaaaaaaa();
-            }
-            ctrlDown = false;
-            otherKeyDown = false;
-        } else {
-            otherKeyDown = false;
+    document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey) {
+            aaaaaaaa();
         }
     });
 
