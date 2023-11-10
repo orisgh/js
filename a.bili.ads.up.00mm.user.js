@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.ads.up.amm
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.up.amm.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.up.amm.user.js
+// @name               a.bili.ads.up.00mm
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.up.00mm.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.up.00mm.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -35,7 +35,9 @@ oooooooooooooooomsms
 
 oooooooooooooooowwww
 
-ooooooooooooooooyxyxhjhj
+ooooooooooooooooyxyx
+
+oooooooooooooooohjhj
 
 oooooooooooooooozszs走进科学
 自说自话的总裁
