@@ -23,9 +23,9 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    let blockList = `
+  let blockList = `
 
 oooooooooooooooolslsaaaa
 oooooooooooooooolsls11
@@ -68,47 +68,47 @@ oooooooooooooooozszszzzz
 
 `.trim().split('\n');
 
-    function aaaaaaaa() {
-        let videoCards = document.querySelectorAll('.video-page-card-small');
-        videoCards.forEach(videoCard => {
-            let name = videoCard.querySelector('.name');
-            if (blockList.includes(name.textContent)) {
-                videoCard.style.display = 'none';
-            }
-        });
+  function aaaaaaaa() {
+    let videoCards = document.querySelectorAll('.video-page-card-small');
+    videoCards.forEach(videoCard => {
+      let name = videoCard.querySelector('.name');
+      if (blockList.includes(name.textContent)) {
+        videoCard.style.display = 'none';
+      }
+    });
+  }
+
+  aaaaaaaa();
+
+  setTimeout(aaaaaaaa, 5000);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      aaaaaaaa();
     }
+  });
 
-    aaaaaaaa();
+  let ctrlDown = false;
+  let otherKeyDown = false;
 
-    setTimeout(aaaaaaaa, 5000);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Control') {
+      ctrlDown = true;
+    } else {
+      otherKeyDown = true;
+    }
+  });
 
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            aaaaaaaa();
-        }
-    });
-
-    let ctrlDown = false;
-    let otherKeyDown = false;
-
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Control') {
-            ctrlDown = true;
-        } else {
-            otherKeyDown = true;
-        }
-    });
-
-    document.addEventListener('keyup', function (e) {
-        if (e.key === 'Control') {
-            if (ctrlDown && !otherKeyDown) {
-                aaaaaaaa();
-            }
-            ctrlDown = false;
-            otherKeyDown = false;
-        } else {
-            otherKeyDown = false;
-        }
-    });
+  document.addEventListener('keyup', function (e) {
+    if (e.key === 'Control') {
+      if (ctrlDown && !otherKeyDown) {
+        aaaaaaaa();
+      }
+      ctrlDown = false;
+      otherKeyDown = false;
+    } else {
+      otherKeyDown = false;
+    }
+  });
 
 })();

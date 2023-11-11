@@ -33,27 +33,27 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    let lastKeypressTime = 0;
-    const keys = ["z", "x", "c", "v", "b"];
+  let lastKeypressTime = 0;
+  const keys = ["z", "x", "c", "v", "b"];
 
-    document.addEventListener('keydown', function (e) {
-        if (keys.includes(e.key)) {
-            let thisKeypressTime = new Date();
-            if (thisKeypressTime - lastKeypressTime <= 250) { // 如果两次按键间隔小于250毫秒
-                const mediaElement = document.querySelector('audio, video');
-                if (mediaElement) {
-                    if (mediaElement.paused) {
-                        mediaElement.play();
-                    } else {
-                        mediaElement.pause();
-                    }
-                }
-                thisKeypressTime = 0; // 重置时间，以防止三击事件
-            }
-            lastKeypressTime = thisKeypressTime;
+  document.addEventListener('keydown', function (e) {
+    if (keys.includes(e.key)) {
+      let thisKeypressTime = new Date();
+      if (thisKeypressTime - lastKeypressTime <= 250) { // 如果两次按键间隔小于250毫秒
+        const mediaElement = document.querySelector('audio, video');
+        if (mediaElement) {
+          if (mediaElement.paused) {
+            mediaElement.play();
+          } else {
+            mediaElement.pause();
+          }
         }
-    });
+        thisKeypressTime = 0; // 重置时间，以防止三击事件
+      }
+      lastKeypressTime = thisKeypressTime;
+    }
+  });
 
 })();

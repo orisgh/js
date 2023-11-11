@@ -23,42 +23,42 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    function aaaaaaaa() {
+  function aaaaaaaa() {
 
-        let cards = document.querySelectorAll('.card-list > .video-card, .video-list > .video-card');
-        for (let i = 0; i < cards.length; i++) {
-            if (!cards[i].classList.contains('counted')) {
-                let counter = document.createElement('span');
-                counter.textContent = i + 1;
-                cards[i].appendChild(counter);
-                cards[i].classList.add('counted');
-            }
-        }
+    let cards = document.querySelectorAll('.card-list > .video-card, .video-list > .video-card');
+    for (let i = 0; i < cards.length; i++) {
+      if (!cards[i].classList.contains('counted')) {
+        let counter = document.createElement('span');
+        counter.textContent = i + 1;
+        cards[i].appendChild(counter);
+        cards[i].classList.add('counted');
+      }
     }
+  }
 
-    aaaaaaaa();
+  aaaaaaaa();
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
 
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

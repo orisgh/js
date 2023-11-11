@@ -27,100 +27,100 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    const blockLists = {
+  const blockLists = {
 
 
-        'a.com': `
+    'a.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'b.com': `
+    'b.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'c.com': `
+    'c.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'd.com': `
+    'd.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'e.com': `
+    'e.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'f.com': `
+    'f.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'g.com': `
+    'g.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-        'z.com': `
+    'z.com': `
 #oooooooo
 .oooooooo
 `
 
 
-    };
+  };
 
-    function aaaaaaaa() {
+  function aaaaaaaa() {
 
-        // 获取当前网站的域名
-        const domain = window.location.hostname;
-        // 获取当前网站对应的屏蔽列表
-        const blockList = (blockLists[domain] || '').trim().split('\n');
-        // 遍历屏蔽列表中的所有选择器
-        for (const selector of blockList) {
-            // 获取网页中与选择器匹配的所有元素
-            const elements = document.querySelectorAll(selector);
-            // 遍历所有元素
-            for (const element of elements) {
-                // 隐藏元素
-                element.style.setProperty('display', 'none', 'important');
-            }
-        }
+    // 获取当前网站的域名
+    const domain = window.location.hostname;
+    // 获取当前网站对应的屏蔽列表
+    const blockList = (blockLists[domain] || '').trim().split('\n');
+    // 遍历屏蔽列表中的所有选择器
+    for (const selector of blockList) {
+      // 获取网页中与选择器匹配的所有元素
+      const elements = document.querySelectorAll(selector);
+      // 遍历所有元素
+      for (const element of elements) {
+        // 隐藏元素
+        element.style.setProperty('display', 'none', 'important');
+      }
     }
+  }
 
-    aaaaaaaa();
+  aaaaaaaa();
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
 
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

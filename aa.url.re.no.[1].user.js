@@ -30,7 +30,7 @@ let url = new URL(window.location.href);
 url.search = '';
 let pathParts = url.pathname.split('/');
 if (pathParts.length > 2) {
-    pathParts = pathParts.slice(0, 2);
+  pathParts = pathParts.slice(0, 2);
 }
 url.pathname = pathParts.join('/');
 window.history.replaceState(null, null, url.toString());

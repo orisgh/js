@@ -23,9 +23,9 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    let blockList = `
+  let blockList = `
 
 
 ooooooooooooooooxwxw1111
@@ -70,37 +70,37 @@ ooooooooooooooooxwxw9999
 
 `.trim().split('\n');
 
-    function aaaaaaaa() {
-        let videoCards = document.querySelectorAll('ytd-compact-video-renderer.ytd-item-section-renderer');
-        videoCards.forEach(videoCard => {
-            let name = videoCard.querySelector('#text-container.ytd-channel-name>#text.ytd-channel-name');
-            if (blockList.includes(name.textContent)) {
-                videoCard.style.display = 'none';
-            }
-        });
+  function aaaaaaaa() {
+    let videoCards = document.querySelectorAll('ytd-compact-video-renderer.ytd-item-section-renderer');
+    videoCards.forEach(videoCard => {
+      let name = videoCard.querySelector('#text-container.ytd-channel-name>#text.ytd-channel-name');
+      if (blockList.includes(name.textContent)) {
+        videoCard.style.display = 'none';
+      }
+    });
+  }
+
+  aaaaaaaa();
+
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
     }
+  });
 
-    aaaaaaaa();
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
-
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

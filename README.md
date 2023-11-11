@@ -18,51 +18,46 @@
 ```
 
 ```js
-(function () {
-    'use strict';
+aaaaaaaa();
 
-    function aaaaaaaa() {
-        // code
-    }
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
 
-})();
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});
 ```
 
 ```js
-    aaaaaaaa();
+(function () {
+  'use strict';
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
-
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
-
-    let ctrlDown = false;
-    let otherKeyDown = false;
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Control') {
-            ctrlDown = true;
-        } else {
-            otherKeyDown = true;
-        }
-    });
-    document.addEventListener('keyup', function (event) {
-        if (event.key === 'Control') {
-            if (ctrlDown && !otherKeyDown) {
-                aaaaaaaa();
-            }
-            ctrlDown = false;
-            otherKeyDown = false;
-        } else {
-            otherKeyDown = false;
-        }
-    });
+  // code
 
 })();
 
+```
+
+```js
+function aaaaaaaa() {
+
+  // code
+
+}
 ```
 
 ```js

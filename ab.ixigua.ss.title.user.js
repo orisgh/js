@@ -23,37 +23,37 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    function aaaaaaaa() {
-        let search_input = document.querySelector('input[type="search"]');
-        if (search_input) {
-            let search_term = search_input.value;
-            document.title = search_term;
-        }
+  function aaaaaaaa() {
+    let search_input = document.querySelector('input[type="search"]');
+    if (search_input) {
+      let search_term = search_input.value;
+      document.title = search_term;
     }
+  }
 
-    aaaaaaaa();
+  aaaaaaaa();
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
 
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
 
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

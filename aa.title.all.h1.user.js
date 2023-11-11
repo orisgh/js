@@ -37,24 +37,24 @@
 
 function aaaaaaaa() {
 
-    const selectors = `
+  const selectors = `
 h1>.mw-page-title-main
 h1>.yt-core-attributed-string
 h1>yt-formatted-string
 h1
 `.trim().split('\n');
 
-    const currentUrl = new URL(window.location.href);
-    const domainName = currentUrl.hostname;
-    for (const selector of selectors) {
-        const element = document.querySelector(selector);
-        if (element) {
-            document.title = "p " + element.textContent + " pppp " + domainName;
-            break;
-        } else {
-            console.error("error");
-        }
+  const currentUrl = new URL(window.location.href);
+  const domainName = currentUrl.hostname;
+  for (const selector of selectors) {
+    const element = document.querySelector(selector);
+    if (element) {
+      document.title = "p " + element.textContent + " pppp " + domainName;
+      break;
+    } else {
+      console.error("error");
     }
+  }
 
 }
 
@@ -64,19 +64,19 @@ setTimeout(aaaaaaaa, 4000);
 setTimeout(aaaaaaaa, 8000);
 
 document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(aaaaaaaa, 1000);
-    }
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-        aaaaaaaa();
-    }
+  if (event.altKey) {
+    aaaaaaaa();
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-        aaaaaaaa();
-    }
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
 });

@@ -26,5 +26,5 @@ let url = new URL(window.location.href);
 url.search = '';
 let pathSegments = url.pathname.split('/').filter(segment => segment);
 if (pathSegments.length === 1 && !isNaN(pathSegments[0])) {
-    window.location.href = `${url.origin}/${pathSegments[0]}/video`;
+  window.location.href = `${url.origin}/${pathSegments[0]}/video`;
 }

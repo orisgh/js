@@ -24,12 +24,12 @@
 
 function aaaaaaaa() {
 
-    function getTextContent(selector) {
-        const element = document.querySelector(selector);
-        return element ? element.textContent : '';
-    }
+  function getTextContent(selector) {
+    const element = document.querySelector(selector);
+    return element ? element.textContent : '';
+  }
 
-    document.title = '/v ' + getTextContent('.channel-nav-name') + ' ' + getTextContent('button.channel-nav-sub-item.channel-nav-sub-item-actived') + ' ' + getTextContent('button.tags-item.is-activity');
+  document.title = '/v ' + getTextContent('.channel-nav-name') + ' ' + getTextContent('button.channel-nav-sub-item.channel-nav-sub-item-actived') + ' ' + getTextContent('button.tags-item.is-activity');
 
 }
 
@@ -39,19 +39,19 @@ setTimeout(aaaaaaaa, 4000);
 setTimeout(aaaaaaaa, 8000);
 
 document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(aaaaaaaa, 1000);
-    }
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-        aaaaaaaa();
-    }
+  if (event.altKey) {
+    aaaaaaaa();
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-        aaaaaaaa();
-    }
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
 });

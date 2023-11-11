@@ -23,9 +23,9 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    let blockList = `
+  let blockList = `
 
 ooooooooooooooooaaaa
 
@@ -101,39 +101,39 @@ oooooooooooooooozzzz
 
 `.trim().split('\n');
 
-    function aaaaaaaa() {
+  function aaaaaaaa() {
 
-        let videoCards = document.querySelectorAll('.col_3.col_xs_1_5.col_md_2.col_xl_1_7.mb_x40');
-        videoCards.forEach(videoCard => {
-            let name = videoCard.querySelector('.bili-video-card__info--author');
-            if (blockList.includes(name.textContent)) {
-                videoCard.style.display = 'none';
-            }
-        });
+    let videoCards = document.querySelectorAll('.col_3.col_xs_1_5.col_md_2.col_xl_1_7.mb_x40');
+    videoCards.forEach(videoCard => {
+      let name = videoCard.querySelector('.bili-video-card__info--author');
+      if (blockList.includes(name.textContent)) {
+        videoCard.style.display = 'none';
+      }
+    });
 
+  }
+
+  aaaaaaaa();
+
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
     }
+  });
 
-    aaaaaaaa();
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
-
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

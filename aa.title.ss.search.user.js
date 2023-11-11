@@ -41,73 +41,73 @@
 // ==/UserScript==
 
 (function () {
-    'use strict';
+  'use strict';
 
-    function aaaaaaaa() {
+  function aaaaaaaa() {
 
-        // 定义一个字符串，包含常见的关键路径名
-        const keyPaths = `
+    // 定义一个字符串，包含常见的关键路径名
+    const keyPaths = `
 search
 term
 `.trim().split('\n');
 
-        // 获取当前页面的URL对象
-        const url = new URL(window.location.href);
+    // 获取当前页面的URL对象
+    const url = new URL(window.location.href);
 
-        // 定义一个函数，从URL中提取搜索词
-        function getSearchTerm(url) {
-            const pathArray = url.pathname.split("/");
-            for (let key of keyPaths) {
-                if (pathArray.includes(key)) {
-                    const keyIndex = pathArray.indexOf(key);
-                    if (pathArray[keyIndex + 1]) {
-                        return pathArray[keyIndex + 1];
-                    } else {
-                        return "";
-                    }
-                }
-            }
+    // 定义一个函数，从URL中提取搜索词
+    function getSearchTerm(url) {
+      const pathArray = url.pathname.split("/");
+      for (let key of keyPaths) {
+        if (pathArray.includes(key)) {
+          const keyIndex = pathArray.indexOf(key);
+          if (pathArray[keyIndex + 1]) {
+            return pathArray[keyIndex + 1];
+          } else {
             return "";
+          }
         }
-
-        // 定义一个函数，从URL中提取域名
-        function getDomainName(url) {
-            return url.hostname;
-        }
-
-        // 调用函数，获取搜索词和域名
-        const searchTerm = getSearchTerm(url);
-        const domainName = getDomainName(url);
-
-        if (searchTerm) {
-            document.title = "ssss " + searchTerm + " " + domainName;
-        } else {
-            console.log("No search term found.");
-        }
-
+      }
+      return "";
     }
 
-    aaaaaaaa();
+    // 定义一个函数，从URL中提取域名
+    function getDomainName(url) {
+      return url.hostname;
+    }
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
+    // 调用函数，获取搜索词和域名
+    const searchTerm = getSearchTerm(url);
+    const domainName = getDomainName(url);
 
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
+    if (searchTerm) {
+      document.title = "ssss " + searchTerm + " " + domainName;
+    } else {
+      console.log("No search term found.");
+    }
 
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
+  }
 
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
+  aaaaaaaa();
+
+  setTimeout(aaaaaaaa, 4000);
+  setTimeout(aaaaaaaa, 8000);
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      setTimeout(aaaaaaaa, 1000);
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.altKey) {
+      aaaaaaaa();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey) {
+      aaaaaaaa();
+    }
+  });
 
 })();

@@ -41,12 +41,12 @@
 
 function aaaaaaaa() {
 
-    let url = new URL(window.location.href);
-    url.search = '';
-    if (url.pathname.endsWith('/')) {
-        url.pathname = url.pathname.slice(0, -1);
-    }
-    window.history.replaceState({}, document.title, url.href);
+  let url = new URL(window.location.href);
+  url.search = '';
+  if (url.pathname.endsWith('/')) {
+    url.pathname = url.pathname.slice(0, -1);
+  }
+  window.history.replaceState({}, document.title, url.href);
 
 }
 
@@ -56,8 +56,8 @@ setTimeout(aaaaaaaa, 4000);
 setTimeout(aaaaaaaa, 8000);
 
 document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(aaaaaaaa, 1000);
-    }
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
 
 });

@@ -26,7 +26,7 @@ let url = new URL(window.location.href);
 url.search = '';
 let pathParts = url.pathname.split('/');
 if (pathParts.length === 2) {
-    let userId = pathParts[1];
-    url.pathname = `${userId}/videos`;
-    window.location.href = url.toString();
+  let userId = pathParts[1];
+  url.pathname = `${userId}/videos`;
+  window.location.href = url.toString();
 }

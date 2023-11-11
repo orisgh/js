@@ -37,7 +37,7 @@
 
 function aaaaaaaa() {
 
-    const searchParams = `
+  const searchParams = `
 keyword
 search_query
 search
@@ -47,25 +47,25 @@ k
 tab
 `.trim().split('\n');
 
-    const currentUrl = new URL(window.location.href);
-    function getSearchTerm(url) {
-        for (let param of searchParams) {
-            if (url.searchParams.has(param)) {
-                return url.searchParams.get(param);
-            }
-        }
-        return "";
+  const currentUrl = new URL(window.location.href);
+  function getSearchTerm(url) {
+    for (let param of searchParams) {
+      if (url.searchParams.has(param)) {
+        return url.searchParams.get(param);
+      }
     }
-    function getDomainName(url) {
-        return url.hostname;
-    }
-    const term = getSearchTerm(currentUrl);
-    const domain = getDomainName(currentUrl);
-    if (term) {
-        document.title = "s " + term + " ssss " + domain;
-    } else {
-        console.log("error");
-    }
+    return "";
+  }
+  function getDomainName(url) {
+    return url.hostname;
+  }
+  const term = getSearchTerm(currentUrl);
+  const domain = getDomainName(currentUrl);
+  if (term) {
+    document.title = "s " + term + " ssss " + domain;
+  } else {
+    console.log("error");
+  }
 
 }
 
@@ -75,19 +75,19 @@ setTimeout(aaaaaaaa, 4000);
 setTimeout(aaaaaaaa, 8000);
 
 document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(aaaaaaaa, 1000);
-    }
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-        aaaaaaaa();
-    }
+  if (event.altKey) {
+    aaaaaaaa();
+  }
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-        aaaaaaaa();
-    }
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
 });

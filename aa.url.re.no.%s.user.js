@@ -34,26 +34,26 @@
 
 function aaaaaaaa() {
 
-    const whitelist = [
-        "keyword",
-        "tab",
-        "search_query",
-        "q",
-        "v",
-        "query",
-        "text",
-    ];
+  const whitelist = [
+    "keyword",
+    "tab",
+    "search_query",
+    "q",
+    "v",
+    "query",
+    "text",
+  ];
 
-    const url = new URL(window.location.href);
-    const params = new URLSearchParams(url.search);
-    for (let param of params.keys()) {
-        if (!whitelist.includes(param)) {
-            params.delete(param);
-        }
+  const url = new URL(window.location.href);
+  const params = new URLSearchParams(url.search);
+  for (let param of params.keys()) {
+    if (!whitelist.includes(param)) {
+      params.delete(param);
     }
-    url.search = params.toString();
-    url.pathname = url.pathname.replace(/\/$/, '');
-    window.history.replaceState(null, null, url.toString());
+  }
+  url.search = params.toString();
+  url.pathname = url.pathname.replace(/\/$/, '');
+  window.history.replaceState(null, null, url.toString());
 
 }
 
@@ -63,8 +63,8 @@ setTimeout(aaaaaaaa, 4000);
 setTimeout(aaaaaaaa, 8000);
 
 document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        setTimeout(aaaaaaaa, 1000);
-    }
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
 
 });

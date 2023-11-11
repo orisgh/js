@@ -22,36 +22,31 @@
 
 // ==/UserScript==
 
-(function () {
-    'use strict';
+function aaaaaaaa() {
 
-    function aaaaaaaa() {
+  // code
 
-        // code
+}
 
-    }
+aaaaaaaa();
 
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
     aaaaaaaa();
+  }
+});
 
-    setTimeout(aaaaaaaa, 4000);
-    setTimeout(aaaaaaaa, 8000);
-
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "visible") {
-            setTimeout(aaaaaaaa, 1000);
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.altKey) {
-            aaaaaaaa();
-        }
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey) {
-            aaaaaaaa();
-        }
-    });
-
-})();
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

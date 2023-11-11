@@ -28,13 +28,13 @@
 
 const addStyle = function addStyle() {
 
-    const id = 'bilibili-dark-theme';
+  const id = 'bilibili-dark-theme';
 
-    const style = document.createElement('style');
+  const style = document.createElement('style');
 
-    style.id = id;
+  style.id = id;
 
-    style.innerHTML = `
+  style.innerHTML = `
 
     @import url("https://s1.hdslb.com/bfs/static/jinkela/long/laputa-css/dark.css");
 
@@ -45,16 +45,16 @@ const addStyle = function addStyle() {
 
     `;
 
-    document.getElementById(id)?.remove();
+  document.getElementById(id)?.remove();
 
-    document.body.append(style);
+  document.body.append(style);
 
 };
 
 document.querySelector('html').style.display = 'none';
 
 document.addEventListener('DOMContentLoaded', () => {
-    addStyle();
-    document.querySelector('html').style.display = '';
+  addStyle();
+  document.querySelector('html').style.display = '';
 
 });
