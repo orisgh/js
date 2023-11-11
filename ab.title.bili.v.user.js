@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.title.bili.u
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.title.bili.u.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.title.bili.u.user.js
+// @name               ab.title.bili.v
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.title.bili.v.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.title.bili.v.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -18,23 +18,19 @@
 // @connect            none
 // @require            none
 
-// @match              https://space.bilibili.com/*
+// @match              https://www.bilibili.com/v/*
 
 // ==/UserScript==
 
 function aaaaaaaa() {
-    let selectors = [
-        '#page-index',
-        '#page-dynamic',
-        '#page-video',
-        '#page-myalbum',
-        '#page-fav',
-    ];
 
-    if (selectors.some(selector => document.querySelector(selector))) {
-        const title = document.querySelector('#h-name').textContent;
-        document.title = '@ @' + title;
+    function getTextContent(selector) {
+        const element = document.querySelector(selector);
+        return element ? element.textContent : '';
     }
+
+    document.title = '/v ' + getTextContent('.channel-nav-name') + ' ' + getTextContent('button.channel-nav-sub-item.channel-nav-sub-item-actived') + ' ' + getTextContent('button.tags-item.is-activity');
+
 }
 
 aaaaaaaa();

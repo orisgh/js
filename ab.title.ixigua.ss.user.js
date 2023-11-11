@@ -1,9 +1,9 @@
 // ==UserScript==
 
-// @name               a.title.ixigua.u
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.title.ixigua.u.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.title.ixigua.u.user.js
-// @run-at             document-idle
+// @name               ab.title.ixigua.ss
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.ss.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.ss.user.js
+// @run-at             document-start
 // @version            2023.1107
 
 // @description        w
@@ -18,18 +18,19 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.ixigua.com/home/*
+// @match              https://www.ixigua.com/search/*
 
 // ==/UserScript==
-
 
 (function () {
     'use strict';
 
-
     function aaaaaaaa() {
-        let newTitle = '@ @' + document.querySelector('h1>.user__name').textContent;
-        document.title = newTitle;
+        let search_input = document.querySelector('input[type="search"]');
+        if (search_input) {
+            let search_term = search_input.value;
+            document.title = search_term;
+        }
     }
 
     aaaaaaaa();

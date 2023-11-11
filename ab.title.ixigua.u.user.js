@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               aa.bili.ads.ad
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.ad.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.ad.user.js
+// @name               ab.title.ixigua.u
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.u.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.u.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -18,49 +18,18 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.bilibili.com/video/BV*
+// @match              https://www.ixigua.com/home/*
 
 // ==/UserScript==
+
 
 (function () {
     'use strict';
 
-    let blockList = `
-
-.ooooooooooooooooooooooooaaaa
-
-.oooooooooooooooooooooooovd
-#bannerAd
-#activity_vote
-#slide_ad
-#right-bottom-banner
-.reply-notice
-.ad-report
-.ad-floor-exp
-.ad-floor-cover
-.slide-ad-exp
-.activity-m-v1
-.pop-live-small-mode
-.video-card-ad-small
-.video-page-special-card-small
-.video-page-game-card-small
-
-.oooooooooooooooooooooooobfq
-.bpx-player-ending-wrap
-
-.oooooooooooooooooooooooov
-
-.oooooooooooooooooooooooozzzz
-
-`.trim().split('\n');
 
     function aaaaaaaa() {
-        for (const selector of blockList) {
-            const elements = document.querySelectorAll(selector);
-            for (const element of elements) {
-                element.style.display = 'none';
-            }
-        }
+        let newTitle = '@ @' + document.querySelector('h1>.user__name').textContent;
+        document.title = newTitle;
     }
 
     aaaaaaaa();

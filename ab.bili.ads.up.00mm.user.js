@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.yt.vd.ads.up.xw
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.yt.vd.ads.up.xw.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.yt.vd.ads.up.xw.user.js
+// @name               ab.bili.ads.up.00mm
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.ads.up.00mm.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.ads.up.00mm.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -18,7 +18,7 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.youtube.com/watch?v=*
+// @match              https://www.bilibili.com/
 
 // ==/UserScript==
 
@@ -27,53 +27,39 @@
 
     let blockList = `
 
+ooooooooooooooooaaaa
 
-ooooooooooooooooxwxw1111
+oooooooooooooooolsls
 
-ooooooooooooooooxwxw11
-德国知事GermanCheese
-大野猫 Big Wild Cat
-歷史哥HistoryBro
-真的很博通
-观察者网
+oooooooooooooooomsms
 
-ooooooooooooooooxwxw22
+oooooooooooooooowwww
 
-ooooooooooooooooxwxw33
+ooooooooooooooooyxyx
 
-ooooooooooooooooxwxw44
+oooooooooooooooohjhj
 
-ooooooooooooooooxwxw55
+oooooooooooooooozszs走进科学
+自说自话的总裁
+环球异事R
+环球揭秘RO
+揭秘Rx
+新报-观察
 
-ooooooooooooooooxwxwjs
-人畜无害小托比
+oooooooooooooooo厚黑学
+啊粥粥啊粥
 
-ooooooooooooooooxwxwtw
-中天電視
-TVBS 優選頻道
-TODAY 看世界
-從台灣看見世界的故事
+oooooooooooooooojsjs
+校尉说
 
-ooooooooooooooooxwxwen1
-
-ooooooooooooooooxwxwen2
-
-ooooooooooooooooxwxwen3
-CNN-News18
-
-ooooooooooooooooxwxwen4
-
-ooooooooooooooooxwxwen5
-
-ooooooooooooooooxwxw9999
-
+oooooooooooooooozzzz
 
 `.trim().split('\n');
 
     function aaaaaaaa() {
-        let videoCards = document.querySelectorAll('ytd-compact-video-renderer.ytd-item-section-renderer');
+        let videoCards = document.querySelectorAll('.container.is-version8>div[data-v-7ae03d4e]');
         videoCards.forEach(videoCard => {
-            let name = videoCard.querySelector('#text-container.ytd-channel-name>#text.ytd-channel-name');
+            let name = videoCard.querySelector('.bili-video-card__info--author');
             if (blockList.includes(name.textContent)) {
                 videoCard.style.display = 'none';
             }

@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               aa.bili.ads.up.00mm
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.up.00mm.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.up.00mm.user.js
+// @name               ab.yt.vd.ads.up.xw
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.yt.vd.ads.up.xw.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.yt.vd.ads.up.xw.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -18,7 +18,7 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.bilibili.com/
+// @match              https://www.youtube.com/watch?v=*
 
 // ==/UserScript==
 
@@ -27,39 +27,53 @@
 
     let blockList = `
 
-ooooooooooooooooaaaa
 
-oooooooooooooooolsls
+ooooooooooooooooxwxw1111
 
-oooooooooooooooomsms
+ooooooooooooooooxwxw11
+德国知事GermanCheese
+大野猫 Big Wild Cat
+歷史哥HistoryBro
+真的很博通
+观察者网
 
-oooooooooooooooowwww
+ooooooooooooooooxwxw22
 
-ooooooooooooooooyxyx
+ooooooooooooooooxwxw33
 
-oooooooooooooooohjhj
+ooooooooooooooooxwxw44
 
-oooooooooooooooozszs走进科学
-自说自话的总裁
-环球异事R
-环球揭秘RO
-揭秘Rx
-新报-观察
+ooooooooooooooooxwxw55
 
-oooooooooooooooo厚黑学
-啊粥粥啊粥
+ooooooooooooooooxwxwjs
+人畜无害小托比
 
-oooooooooooooooojsjs
-校尉说
+ooooooooooooooooxwxwtw
+中天電視
+TVBS 優選頻道
+TODAY 看世界
+從台灣看見世界的故事
 
-oooooooooooooooozzzz
+ooooooooooooooooxwxwen1
+
+ooooooooooooooooxwxwen2
+
+ooooooooooooooooxwxwen3
+CNN-News18
+
+ooooooooooooooooxwxwen4
+
+ooooooooooooooooxwxwen5
+
+ooooooooooooooooxwxw9999
+
 
 `.trim().split('\n');
 
     function aaaaaaaa() {
-        let videoCards = document.querySelectorAll('.container.is-version8>div[data-v-7ae03d4e]');
+        let videoCards = document.querySelectorAll('ytd-compact-video-renderer.ytd-item-section-renderer');
         videoCards.forEach(videoCard => {
-            let name = videoCard.querySelector('.bili-video-card__info--author');
+            let name = videoCard.querySelector('#text-container.ytd-channel-name>#text.ytd-channel-name');
             if (blockList.includes(name.textContent)) {
                 videoCard.style.display = 'none';
             }

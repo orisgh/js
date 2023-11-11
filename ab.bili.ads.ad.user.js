@@ -1,9 +1,9 @@
 // ==UserScript==
 
-// @name               a.title.ixigua.ss
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.title.ixigua.ss.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.title.ixigua.ss.user.js
-// @run-at             document-start
+// @name               ab.bili.ads.ad
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.ads.ad.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.ads.ad.user.js
+// @run-at             document-idle
 // @version            2023.1107
 
 // @description        w
@@ -18,18 +18,48 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.ixigua.com/search/*
+// @match              https://www.bilibili.com/video/BV*
 
 // ==/UserScript==
 
 (function () {
     'use strict';
 
+    let blockList = `
+
+.ooooooooooooooooooooooooaaaa
+
+.oooooooooooooooooooooooovd
+#bannerAd
+#activity_vote
+#slide_ad
+#right-bottom-banner
+.reply-notice
+.ad-report
+.ad-floor-exp
+.ad-floor-cover
+.slide-ad-exp
+.activity-m-v1
+.pop-live-small-mode
+.video-card-ad-small
+.video-page-special-card-small
+.video-page-game-card-small
+
+.oooooooooooooooooooooooobfq
+.bpx-player-ending-wrap
+
+.oooooooooooooooooooooooov
+
+.oooooooooooooooooooooooozzzz
+
+`.trim().split('\n');
+
     function aaaaaaaa() {
-        let search_input = document.querySelector('input[type="search"]');
-        if (search_input) {
-            let search_term = search_input.value;
-            document.title = search_term;
+        for (const selector of blockList) {
+            const elements = document.querySelectorAll(selector);
+            for (const element of elements) {
+                element.style.display = 'none';
+            }
         }
     }
 
