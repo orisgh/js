@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.vd.plk
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.plk.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.plk.user.js
+// @name               ab.bili.vd.plk
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.plk.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.plk.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

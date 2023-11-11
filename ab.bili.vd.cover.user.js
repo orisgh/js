@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.vd.cover
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.cover.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.cover.user.js
+// @name               ab.bili.vd.cover
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.cover.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.cover.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

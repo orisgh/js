@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.vd.event.key.ctrl.sd
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.event.key.ctrl.sd.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.event.key.ctrl.sd.user.js
+// @name               ab.bili.vd.event.key.ctrl.sd
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.event.key.ctrl.sd.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.event.key.ctrl.sd.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

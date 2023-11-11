@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.v.popular.all
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.v.popular.all.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.v.popular.all.user.js
+// @name               ab.bili.v.popular.all
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.v.popular.all.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.v.popular.all.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.vd.dark
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.dark.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.vd.dark.user.js
+// @name               ab.bili.vd.dark
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.dark.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.vd.dark.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
