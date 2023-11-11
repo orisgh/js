@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               ab.title.ixigua.u
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.u.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.title.ixigua.u.user.js
+// @name               ab.ixigua.u.title
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.ixigua.u.title.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.ixigua.u.title.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

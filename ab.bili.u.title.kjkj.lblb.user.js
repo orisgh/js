@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               ab.title.bili.u.kjkj.lblb
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.title.bili.u.kjkj.lblb.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.title.bili.u.kjkj.lblb.user.js
+// @name               ab.bili.u.title.kjkj.lblb
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.u.title.kjkj.lblb.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.u.title.kjkj.lblb.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
