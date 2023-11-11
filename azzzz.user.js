@@ -1,6 +1,6 @@
 // ==UserScript==
 
-// @name               a.z
+// @name               azzzz
 // @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
 // @run-at             document-idle

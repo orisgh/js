@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.yt.vd.ads.up.zs.ls.dy
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.yt.vd.ads.up.zs.ls.dy.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.yt.vd.ads.up.zs.ls.dy.user.js
+// @name               ab.yt.vd.ads.up.zs.ls.dy
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.yt.vd.ads.up.zs.ls.dy.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.yt.vd.ads.up.zs.ls.dy.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.kjj.click.1
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.kjj.click.1.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.kjj.click.1.user.js
+// @name               aa.kjj.click.1
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.kjj.click.1.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.kjj.click.1.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

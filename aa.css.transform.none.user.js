@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.css.transform.none
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.css.transform.none.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.css.transform.none.user.js
+// @name               aa.css.transform.none
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.css.transform.none.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.css.transform.none.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

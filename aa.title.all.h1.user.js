@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.title.all.h1
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.title.all.h1.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.title.all.h1.user.js
+// @name               aa.title.all.h1
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.title.all.h1.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.title.all.h1.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

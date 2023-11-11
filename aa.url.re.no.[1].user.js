@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.url.re.yes.site.ytb.u
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.ytb.u.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.ytb.u.user.js
+// @name               aa.url.re.no.[1]
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.url.re.no.[1].user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.url.re.no.[1].user.js
 // @run-at             document-start
 // @version            2023.1107
 
@@ -18,15 +18,19 @@
 // @connect            none
 // @require            none
 
-// @match              https://www.youtube.com/@*
+// @match              w
+// @match              w
+// @match              w
+// @match              w
+// @match              w
 
 // ==/UserScript==
 
 let url = new URL(window.location.href);
 url.search = '';
 let pathParts = url.pathname.split('/');
-if (pathParts.length === 2) {
-    let userId = pathParts[1];
-    url.pathname = `${userId}/videos`;
-    window.location.href = url.toString();
+if (pathParts.length > 2) {
+    pathParts = pathParts.slice(0, 2);
 }
+url.pathname = pathParts.join('/');
+window.history.replaceState(null, null, url.toString());

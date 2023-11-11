@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.title.ss.search
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.title.ss.search.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.title.ss.search.user.js
+// @name               aa.title.ss.search
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.title.ss.search.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.title.ss.search.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

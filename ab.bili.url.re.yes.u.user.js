@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.url.re.yes.site.bili.u
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.bili.u.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.bili.u.user.js
+// @name               ab.bili.url.re.yes.u
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ab.bili.url.re.yes.u.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ab.bili.url.re.yes.u.user.js
 // @run-at             document-start
 // @version            2023.1107
 

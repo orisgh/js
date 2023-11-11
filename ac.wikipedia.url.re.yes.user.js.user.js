@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.url.re.yes.site.wikipedia
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.wikipedia.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.url.re.yes.site.wikipedia.user.js
+// @name               ac.wikipedia.url.re.yes
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/ac.wikipedia.url.re.yes.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/ac.wikipedia.url.re.yes.user.js
 // @run-at             document-start
 // @version            2023.1107
 
