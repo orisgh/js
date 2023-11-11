@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.bili.ads.ad
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.bili.ads.ad.user.js
+// @name               aa.bili.ads.ad
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.ad.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.bili.ads.ad.user.js
 // @run-at             document-idle
 // @version            2023.1107
 

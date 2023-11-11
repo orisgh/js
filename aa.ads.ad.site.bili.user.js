@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               a.ads.ad.site.abcdefg
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.ads.ad.site.abcdefg.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.ads.ad.site.abcdefg.user.js
+// @name               aa.ads.ad.site.bili
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.ads.ad.site.bili.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.ads.ad.site.bili.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -18,11 +18,15 @@
 // @connect            none
 // @require            none
 
+// @match              https://www.bilibili.com/*
+// @match              https://search.bilibili.com/*
+// @match              https://space.bilibili.com/*
 // @match              https://a.com
 // @match              https://b.com
 // @match              https://c.com
 // @match              https://d.com
 // @match              https://e.com
+// @match              https://f.com
 
 // ==/UserScript==
 
@@ -30,6 +34,42 @@
     'use strict';
 
     const blockLists = {
+
+        'www.bilibili.com': `
+.oooooooooooooooovd
+.reply-notice
+#bannerAd
+#activity_vote
+#slide_ad
+#right-bottom-banner
+.ad-report
+.ad-floor-exp
+.ad-floor-cover
+.slide-ad-exp
+.video-card-ad-small
+.video-page-special-card-small
+.video-page-game-card-small
+.activity-m-v1
+.pop-live-small-mode
+.oooooooooooooooovdbfq
+.bpx-player-ending-wrap
+.oooooooooooooooov
+.eva-banner
+`,
+
+
+        'search.bilibili.com': `
+#bili-header-container
+.search-input
+.search-line
+.bangumi-pgc-list.i_wrapper.search-all-list
+`,
+
+
+        'space.bilibili.com': `
+#biliMainHeader
+#page-video>.col-full>.main-content>.row.page-head.clearfix
+`,
 
 
         'a.com': `

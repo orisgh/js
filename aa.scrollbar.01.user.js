@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name               a.scrollbar.01
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/a.scrollbar.01.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/a.scrollbar.01.user.js
+// @name               aa.scrollbar.01
+// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/aa.scrollbar.01.user.js
+// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/aa.scrollbar.01.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
