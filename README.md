@@ -1,23 +1,4 @@
 ```js
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
-// @run-at             document-idle
-// @version            2023.1107
-
-// @description        w
-// @author             nox
-// @license            MIT
-// @namespace          https://github.com/orisgh
-// @copyright          2023, nox (https://github.com/orisgh)
-// @homepageURL        https://github.com/orisgh/nox.user.js
-
-// @noframes
-// @grant              none
-// @connect            none
-// @require            none
-```
-
-```js
 aaaaaaaa();
 
 setTimeout(aaaaaaaa, 4000);
@@ -43,13 +24,57 @@ document.addEventListener('keydown', function (event) {
 ```
 
 ```js
-(function () {
-  'use strict';
+// @downloadURL        https://github.com/orisgh/js/raw/main/.user.js
+// @updateURL          https://github.com/orisgh/js/raw/main/.user.js
+// @run-at             document-idle
+// @version            2023.1111
 
-  // code
+// @description        w
+// @author             nox
+// @license            MIT
+// @namespace          https://github.com/orisgh
+// @homepageURL        https://github.com/orisgh/js
+// @copyright          2023, nox (https://github.com/orisgh)
 
-})();
+// @noframes
+// @grant              none
+// @connect            none
+// @require            none
+```
 
+```js
+// @downloadURL        https://github.com/orisgh/js/raw/main/.user.js
+// @updateURL          https://github.com/orisgh/js/raw/main/.user.js
+// @run-at             document-start
+// @version            2023.1111
+
+// @description        w
+// @author             nox
+// @license            MIT
+// @namespace          https://github.com/orisgh
+// @homepageURL        https://github.com/orisgh/js
+// @copyright          2023, nox (https://github.com/orisgh)
+
+// @noframes
+// @grant              none
+// @connect            none
+// @require            none
+```
+
+```js
+// @match              w
+// @match              w
+// @match              w
+// @match              w
+// @match              w
+```
+
+```js
+// @match              https://e.com
+// @match              https://d.com
+// @match              https://c.com
+// @match              https://b.com
+// @match              https://a.com
 ```
 
 ```js
@@ -61,20 +86,11 @@ function aaaaaaaa() {
 ```
 
 ```js
-// @downloadURL        https://github.com/orisgh/nox.user.js/raw/main/.user.js
-// @updateURL          https://github.com/orisgh/nox.user.js/raw/main/.user.js
-// @run-at             document-start
-// @version            2023.1107
+(function () {
+  'use strict';
 
-// @description        w
-// @author             nox
-// @license            MIT
-// @namespace          https://github.com/orisgh
-// @copyright          2023, nox (https://github.com/orisgh)
-// @homepageURL        https://github.com/orisgh/nox.user.js
+  // code
 
-// @noframes
-// @grant              none
-// @connect            none
-// @require            none
+})();
+
 ```
