@@ -14,9 +14,9 @@
 // @copyright          2023, nox (https://github.com/orisgh)
 
 // @noframes
-// @grant              none
 // @connect            none
 // @require            none
+// @grant              none
 
 // @match              *://*/*
 

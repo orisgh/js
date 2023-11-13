@@ -1,8 +1,8 @@
 // ==UserScript==
 
-// @name               aa.ads.ad.site.abcdefg
-// @downloadURL        https://github.com/orisgh/js/raw/main/aa.ads.ad.site.abcdefg.user.js
-// @updateURL          https://github.com/orisgh/js/raw/main/aa.ads.ad.site.abcdefg.user.js
+// @name               aa.ads.ad.site.abcd
+// @downloadURL        https://github.com/orisgh/js/raw/main/aa.ads.ad.site.abcd.user.js
+// @updateURL          https://github.com/orisgh/js/raw/main/aa.ads.ad.site.abcd.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
@@ -14,9 +14,9 @@
 // @copyright          2023, nox (https://github.com/orisgh)
 
 // @noframes
-// @grant              none
 // @connect            none
 // @require            none
+// @grant              none
 
 // @match              https://a.com
 // @match              https://b.com
