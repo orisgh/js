@@ -26,6 +26,8 @@
 // @match              https://www.wuzhuiso.com/s?q=*
 // @match              https://thepiratebay.org/search.php?q=*
 
+// @match              https://t.bilibili.com/*
+
 // @match              w
 // @match              w
 
