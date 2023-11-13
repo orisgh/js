@@ -1,8 +1,8 @@
 // ==UserScript==
 
 // @name               aa.url.re.no.%s
-// @downloadURL        https://github.com/orisgh/js/raw/main/aa.url.re.no.%s.user.js
-// @updateURL          https://github.com/orisgh/js/raw/main/aa.url.re.no.%s.user.js
+// @downloadURL        https://github.com/orisgh/js/raw/main/aa.url.re.no.%25s.user.js
+// @updateURL          https://github.com/orisgh/js/raw/main/aa.url.re.no.%25s.user.js
 // @run-at             document-start
 // @version            2023.1107
 

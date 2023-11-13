@@ -1,8 +1,8 @@
 // ==UserScript==
 
 // @name               aa.title.ss.%s
-// @downloadURL        https://github.com/orisgh/js/raw/main/aa.title.ss.%s.user.js
-// @updateURL          https://github.com/orisgh/js/raw/main/aa.title.ss.%s.user.js
+// @downloadURL        https://github.com/orisgh/js/raw/main/aa.title.ss.%25s.user.js
+// @updateURL          https://github.com/orisgh/js/raw/main/aa.title.ss.%25s.user.js
 // @run-at             document-idle
 // @version            2023.1107
 
