@@ -18,18 +18,13 @@
 // @require            none
 // @grant              none
 
-// @match              https://search.bilibili.com/*
-// @match              https://www.youtube.com/results?search_query=*
 // @match              https://cn.pornhub.com/video/search?search=*
 // @match              https://www.pornhub.com/video/search?search=*
+
 // @match              https://www.youporn.com/search/?query=*
-// @match              https://www.google.com/search?q=*
-// @match              https://www.wuzhuiso.com/s?q=*
-// @match              https://thepiratebay.org/search.php?q=*
+
 // @match              https://www.xvideos.com/?k=*
-// @match              w
-// @match              w
-// @match              w
+
 // @match              w
 // @match              w
 
@@ -38,13 +33,9 @@
 function aaaaaaaa() {
 
   const searchParams = `
-keyword
-search_query
 search
 query
-q
 k
-tab
 `.trim().split('\n');
 
   const currentUrl = new URL(window.location.href);

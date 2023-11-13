@@ -21,7 +21,7 @@
 // @match              https://cn.pornhub.com/model/*
 // @match              https://www.pornhub.com/model/*
 // @match              w
-// @match              ww
+// @match              w
 
 // ==/UserScript==
 
@@ -31,11 +31,7 @@
   function aaaaaaaa() {
 
     const selectorsList = `
-#channel-container #channel-name #text-container.ytd-channel-name yt-formatted-string.ytd-channel-name
-h1 .user__name
-.userinfo-authorname
 h1
-#head-info-vm .rows-ctnr .upper-row .left-ctnr .room-owner-username
 `.trim().split('\n');
 
     for (const selector of selectorsList) {

@@ -19,22 +19,6 @@
 // @grant              none
 
 // @match              https://subhd.tv/search/*
-// @match              https://www.fuq.com/zh/search/*
-// @match              https://www.ixxx.com/zh/search/*
-// @match              https://www.qorno.com/search/*
-// @match              https://www.pornhd.com/search/*
-// @match              https://cn.xgroovy.com/search/*
-// @match              https://www.metaporn.com/search/*
-// @match              https://www.gotporn.com/search/*
-// @match              https://www.tubegalore.com/zh/search/*
-// @match              w
-// @match              w
-// @match              w
-// @match              w
-// @match              w
-
-// @match              https://motherless.com/term/*
-// @match              w
 // @match              w
 // @match              w
 

@@ -29,9 +29,6 @@
 // @match              https://chrome.google.com/webstore/detail/*
 // @match              w
 // @match              w
-// @match              w
-// @match              w
-// @match              w
 
 // ==/UserScript==
 

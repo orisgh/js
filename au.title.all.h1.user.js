@@ -19,16 +19,13 @@
 // @grant              none
 
 // @match              w
-// @match              ww
+// @match              w
 
 // ==/UserScript==
 
 function aaaaaaaa() {
 
   const selectors = `
-h1>.mw-page-title-main
-h1>.yt-core-attributed-string
-h1>yt-formatted-string
 h1
 `.trim().split('\n');
 
