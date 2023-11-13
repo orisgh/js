@@ -21,9 +21,11 @@
 // @match              https://www.bilibili.com/video/BV*
 // @match              https://www.youtube.com/watch?v=*
 // @match              https://www.youtube.com/hashtag/*
-// @match              https://www.qiuwenbaike.cn/wiki/*
 // @match              https://www.ixigua.com/*?logTag=*
+
 // @match              https://zh.wikipedia.org/wiki/*
+// @match              https://www.qiuwenbaike.cn/wiki/*
+
 // @match              https://subhd.tv/a/*
 // @match              https://subhd.tv/d/*
 // @match              https://chrome.google.com/webstore/detail/*

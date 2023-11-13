@@ -19,10 +19,13 @@
 // @grant              none
 
 // @match              https://search.bilibili.com/*
+
 // @match              https://www.youtube.com/results?search_query=*
+
 // @match              https://www.google.com/search?q=*
 // @match              https://www.wuzhuiso.com/s?q=*
 // @match              https://thepiratebay.org/search.php?q=*
+
 // @match              w
 // @match              w
 

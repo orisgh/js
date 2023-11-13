@@ -23,8 +23,9 @@
 // @match              https://www.youtube.com/c/*
 // @match              https://www.ixigua.com/home/*
 // @match              https://haokan.baidu.com/author/*
+
 // @match              w
-// @match              ww
+// @match              w
 
 // ==/UserScript==
 
