@@ -36,14 +36,14 @@
 function aaaaaaaa() {
 
   const searchParams = `
-keyword
-search_query
-search
-query
-q
-k
-tab
-`.trim().split('\n');
+  keyword
+  search_query
+  search
+  query
+  q
+  k
+  tab
+  `.trim().split('\n');
 
   const currentUrl = new URL(window.location.href);
   function getSearchTerm(url) {
@@ -54,13 +54,14 @@ tab
     }
     return "";
   }
-  function getDomainName(url) {
-    return url.hostname;
+  function getMainDomain(url) {
+    const domainParts = url.hostname.split('.');
+    return domainParts[domainParts.length - 2]; // 获取主域名
   }
   const term = getSearchTerm(currentUrl);
-  const domain = getDomainName(currentUrl);
+  const mainDomain = getMainDomain(currentUrl);
   if (term) {
-    document.title = "s " + term + " ssss " + domain;
+    document.title = "s " + term + " ssss " + mainDomain;
   } else {
     console.log("error");
   }

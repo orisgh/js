@@ -29,16 +29,13 @@
 
   function aaaaaaaa() {
 
-    // 定义一个字符串，包含常见的关键路径名
     const keyPaths = `
 search
 term
 `.trim().split('\n');
 
-    // 获取当前页面的URL对象
     const url = new URL(window.location.href);
 
-    // 定义一个函数，从URL中提取搜索词
     function getSearchTerm(url) {
       const pathArray = url.pathname.split("/");
       for (let key of keyPaths) {
@@ -54,17 +51,16 @@ term
       return "";
     }
 
-    // 定义一个函数，从URL中提取域名
-    function getDomainName(url) {
-      return url.hostname;
+    function getMainDomain(url) {
+      const domainParts = url.hostname.split('.');
+      return domainParts[domainParts.length - 2];
     }
 
-    // 调用函数，获取搜索词和域名
     const searchTerm = getSearchTerm(url);
-    const domainName = getDomainName(url);
+    const mainDomain = getMainDomain(url);
 
     if (searchTerm) {
-      document.title = "ssss " + searchTerm + " " + domainName;
+      document.title = "ssss " + searchTerm + " " + mainDomain;
     } else {
       console.log("No search term found.");
     }

@@ -37,25 +37,25 @@
 
 function aaaaaaaa() {
 
-const selectors = `
+  const selectors = `
 h1>.mw-page-title-main
 h1>.yt-core-attributed-string
 h1>yt-formatted-string
 h1
 `.trim().split('\n');
 
-const currentUrl = new URL(window.location.href);
-const domainParts = currentUrl.hostname.split('.');
-const mainDomain = domainParts[domainParts.length - 2]; // 获取主域名
-for (const selector of selectors) {
-  const element = document.querySelector(selector);
-  if (element) {
-    document.title = "p " + element.textContent + " pppp " + mainDomain;
-    break;
-  } else {
-    console.error("error");
+  const currentUrl = new URL(window.location.href);
+  const domainParts = currentUrl.hostname.split('.');
+  const mainDomain = domainParts[domainParts.length - 2];
+  for (const selector of selectors) {
+    const element = document.querySelector(selector);
+    if (element) {
+      document.title = "p " + element.textContent + " pppp " + mainDomain;
+      break;
+    } else {
+      console.error("error");
+    }
   }
-}
 
 }
 
