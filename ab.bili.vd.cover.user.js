@@ -25,17 +25,13 @@
 (function () {
   'use strict';
 
-  // 获取当前页面的URL
   var url = new URL(window.location.href);
 
-  // 从URL的路径中提取bvid
   var bvid = url.pathname.split('/')[2];
 
-  // 调用Bilibili的API获取视频信息
   fetch('https://api.bilibili.com/x/web-interface/view?bvid=' + bvid)
     .then(response => response.json())
     .then(data => {
-      // 从返回的数据中获取pic
       var pic = data.data.pic;
 
       var btn = document.createElement('button');
@@ -58,7 +54,6 @@
       img.style.maxWidth = '100%';
       img.style.zIndex = '1100';
 
-      // 设置图片的src为pic
       img.src = pic;
 
       btn.addEventListener('mouseover', function () {

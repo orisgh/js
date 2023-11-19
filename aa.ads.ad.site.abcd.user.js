@@ -84,17 +84,11 @@
 
   function aaaaaaaa() {
 
-    // 获取当前网站的域名
     const domain = window.location.hostname;
-    // 获取当前网站对应的屏蔽列表
     const blockList = (blockLists[domain] || '').trim().split('\n');
-    // 遍历屏蔽列表中的所有选择器
     for (const selector of blockList) {
-      // 获取网页中与选择器匹配的所有元素
       const elements = document.querySelectorAll(selector);
-      // 遍历所有元素
       for (const element of elements) {
-        // 隐藏元素
         element.style.setProperty('display', 'none', 'important');
       }
     }

@@ -27,25 +27,19 @@
 
   function aaaaaaaa() {
 
-    // 获取网页中的所有元素
     const allElements = document.querySelectorAll('*');
 
-    // 遍历所有元素
     for (const element of allElements) {
-      // 获取元素的计算样式
       const computedStyle = getComputedStyle(element);
 
-      // 如果元素已经设置了 transform 属性，则将其设置为 none
       if (computedStyle.transform !== 'none') {
         element.style.transform = 'none';
       }
 
-      // 如果元素已经设置了 transition 属性，则将其设置为 none
       if (computedStyle.transition !== 'all 0s ease 0s') {
         element.style.transition = 'none';
       }
 
-      // 如果元素的 position 属性为 fixed，则将其设置为 relative
       if (computedStyle.position === 'fixed') {
         element.style.position = 'relative';
       }

@@ -56,7 +56,7 @@ function aaaaaaaa() {
   }
   function getMainDomain(url) {
     const domainParts = url.hostname.split('.');
-    return domainParts[domainParts.length - 2]; // 获取主域名
+    return domainParts[domainParts.length - 2];
   }
   const term = getSearchTerm(currentUrl);
   const mainDomain = getMainDomain(currentUrl);
