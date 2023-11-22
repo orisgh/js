@@ -24,11 +24,14 @@
 // @match              https://www.ixigua.com/home/*
 // @match              https://haokan.baidu.com/author/*
 
-// @match              w
-// @match              w
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 (function () {
   'use strict';
 

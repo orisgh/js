@@ -20,11 +20,15 @@
 
 // @match              https://cn.pornhub.com/model/*
 // @match              https://www.pornhub.com/model/*
-// @match              w
-// @match              w
+
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 (function () {
   'use strict';
 

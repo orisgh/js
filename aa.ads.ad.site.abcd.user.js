@@ -18,14 +18,16 @@
 // @require            none
 // @grant              none
 
-// @match              https://a.com
-// @match              https://b.com
-// @match              https://c.com
-// @match              https://d.com
-// @match              https://e.com
+// @match              w
+
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 (function () {
   'use strict';
 

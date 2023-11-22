@@ -24,11 +24,15 @@
 // @match              https://www.youtube.com/results?search_query=*
 // @match              https://www.google.com/search?q=*
 // @match              https://www.wuzhuiso.com/s?q=*
-// @match              w
-// @match              w
+
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 function aaaaaaaa() {
 
   const whitelist = [

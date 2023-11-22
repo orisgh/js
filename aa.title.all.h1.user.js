@@ -30,11 +30,14 @@
 // @match              https://subhd.tv/d/*
 // @match              https://chrome.google.com/webstore/detail/*
 
-// @match              w
-// @match              w
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 function aaaaaaaa() {
 
   const selectors = `

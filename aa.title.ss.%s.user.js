@@ -28,11 +28,14 @@
 
 // @match              https://t.bilibili.com/*
 
-// @match              w
-// @match              w
+
+
+
 
 // ==/UserScript==
-
+/*
+// @match              
+*/
 function aaaaaaaa() {
 
   const searchParams = `

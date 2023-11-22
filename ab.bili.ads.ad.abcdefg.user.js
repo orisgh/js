@@ -21,12 +21,10 @@
 // @match              https://www.bilibili.com/*
 // @match              https://search.bilibili.com/*
 // @match              https://space.bilibili.com/*
-// @match              https://a.com
-// @match              https://b.com
-// @match              https://c.com
-// @match              https://d.com
-// @match              https://e.com
-// @match              https://f.com
+
+
+
+
 
 // ==/UserScript==
 

@@ -26,13 +26,21 @@
 // @match              https://www.metaporn.com/search/*
 // @match              https://www.gotporn.com/search/*
 // @match              https://www.tubegalore.com/zh/search/*
-// @match              w
-// @match              w
+
+
+
+
 
 // @match              https://motherless.com/term/*
 
-// ==/UserScript==
 
+
+
+
+// ==/UserScript==
+/*
+// @match              
+*/
 (function () {
   'use strict';
 
