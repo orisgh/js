@@ -28,12 +28,9 @@
 
 // ==/UserScript==
 
-(function () {
-  'use strict';
+const blockLists = {
 
-  const blockLists = {
-
-    'www.bilibili.com': `
+  'www.bilibili.com': `
 .oooooooooooooooovd
 .reply-notice
 #bannerAd
@@ -56,7 +53,7 @@
 `,
 
 
-    'search.bilibili.com': `
+  'search.bilibili.com': `
 #bili-header-container
 .search-input
 .search-line
@@ -64,95 +61,89 @@
 `,
 
 
-    'space.bilibili.com': `
+  'space.bilibili.com': `
 #biliMainHeader
 #page-video>.col-full>.main-content>.row.page-head.clearfix
 `,
 
 
-    'a.com': `
+  'a.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'b.com': `
+  'b.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'c.com': `
+  'c.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'd.com': `
+  'd.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'e.com': `
+  'e.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'f.com': `
+  'f.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'g.com': `
+  'g.com': `
 #oooooooo
 .oooooooo
 `,
 
 
-    'z.com': `
+  'z.com': `
 #oooooooo
 .oooooooo
 `
 
 
-  };
+};
 
-  function aaaaaaaa() {
+function aaaaaaaa() {
 
-    const domain = window.location.hostname;
-    const blockList = (blockLists[domain] || '').trim().split('\n');
-    for (const selector of blockList) {
-      const elements = document.querySelectorAll(selector);
-      for (const element of elements) {
-        element.style.setProperty('display', 'none', 'important');
-      }
+  const domain = window.location.hostname;
+  const blockList = (blockLists[domain] || '').trim().split('\n');
+  for (const selector of blockList) {
+    const elements = document.querySelectorAll(selector);
+    for (const element of elements) {
+      element.style.setProperty('display', 'none', 'important');
     }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

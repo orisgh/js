@@ -29,52 +29,45 @@
 
 
 // ==/UserScript==
+
 /*
 // @match              
 */
-(function () {
-  'use strict';
 
-  function aaaaaaaa() {
+function aaaaaaaa() {
 
-    const selectorsList = `
-#channel-container #channel-name #text-container.ytd-channel-name yt-formatted-string.ytd-channel-name
-h1 .user__name
-.userinfo-authorname
-h1
-#head-info-vm .rows-ctnr .upper-row .left-ctnr .room-owner-username
+  const selectorsList = `
+    #text.ytd-channel-name
+    .userinfo-authorname
+    #head-info-vm .rows-ctnr .upper-row .left-ctnr .room-owner-username
+    h1 .user__name
+    h1
 `.trim().split('\n');
 
-    for (const selector of selectorsList) {
-      const element = document.querySelector(selector);
-      if (element) {
-        document.title = '@ @' + element.textContent;
-        break;
-      }
+  for (const selector of selectorsList) {
+    const element = document.querySelector(selector);
+    if (element) {
+      document.title = '@ @' + element.textContent;
+      break;
     }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

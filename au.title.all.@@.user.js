@@ -26,48 +26,41 @@
 
 
 // ==/UserScript==
+
 /*
 // @match              
 */
-(function () {
-  'use strict';
 
-  function aaaaaaaa() {
+function aaaaaaaa() {
 
-    const selectorsList = `
+  const selectorsList = `
 h1
 `.trim().split('\n');
 
-    for (const selector of selectorsList) {
-      const element = document.querySelector(selector);
-      if (element) {
-        document.title = '@ @' + element.textContent;
-        break;
-      }
+  for (const selector of selectorsList) {
+    const element = document.querySelector(selector);
+    if (element) {
+      document.title = '@ @' + element.textContent;
+      break;
     }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

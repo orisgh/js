@@ -22,10 +22,7 @@
 
 // ==/UserScript==
 
-(function () {
-  'use strict';
-
-  let blockList = `
+let blockList = `
 
 oooooooooooooooo1111
 
@@ -91,37 +88,31 @@ oooooooooooooooo9999
 
 `.trim().split('\n');
 
-  function aaaaaaaa() {
-    let eboxes = document.querySelectorAll('.ebox');
-    eboxes.forEach(ebox => {
-      let author = ebox.querySelector('.author');
-      if (blockList.includes(author.textContent)) {
-        ebox.style.display = 'none';
-      }
-    });
+function aaaaaaaa() {
+  let eboxes = document.querySelectorAll('.ebox');
+  eboxes.forEach(ebox => {
+    let author = ebox.querySelector('.author');
+    if (blockList.includes(author.textContent)) {
+      ebox.style.display = 'none';
+    }
+  });
+}
+
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
   }
-
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

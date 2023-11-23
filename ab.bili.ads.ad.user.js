@@ -22,10 +22,7 @@
 
 // ==/UserScript==
 
-(function () {
-  'use strict';
-
-  let blockList = `
+let blockList = `
 
 .ooooooooooooooooooooooooaaaa
 
@@ -54,36 +51,30 @@
 
 `.trim().split('\n');
 
-  function aaaaaaaa() {
-    for (const selector of blockList) {
-      const elements = document.querySelectorAll(selector);
-      for (const element of elements) {
-        element.style.display = 'none';
-      }
+function aaaaaaaa() {
+  for (const selector of blockList) {
+    const elements = document.querySelectorAll(selector);
+    for (const element of elements) {
+      element.style.display = 'none';
     }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

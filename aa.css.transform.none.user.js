@@ -25,54 +25,47 @@
 
 
 // ==/UserScript==
+
 /*
 // @match              
 */
-(function () {
-  'use strict';
 
-  function aaaaaaaa() {
+function aaaaaaaa() {
 
-    const allElements = document.querySelectorAll('*');
+  const allElements = document.querySelectorAll('*');
 
-    for (const element of allElements) {
-      const computedStyle = getComputedStyle(element);
+  for (const element of allElements) {
+    const computedStyle = getComputedStyle(element);
 
-      if (computedStyle.transform !== 'none') {
-        element.style.transform = 'none';
-      }
+    if (computedStyle.transform !== 'none') {
+      element.style.transform = 'none';
+    }
 
-      if (computedStyle.transition !== 'all 0s ease 0s') {
-        element.style.transition = 'none';
-      }
+    if (computedStyle.transition !== 'all 0s ease 0s') {
+      element.style.transition = 'none';
+    }
 
-      if (computedStyle.position === 'fixed') {
-        element.style.position = 'relative';
-      }
+    if (computedStyle.position === 'fixed') {
+      element.style.position = 'relative';
     }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

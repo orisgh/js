@@ -22,44 +22,35 @@
 
 // ==/UserScript==
 
-(function () {
-  'use strict';
+function aaaaaaaa() {
 
-  function aaaaaaaa() {
+  let selectors = [
+    '#page-channel'
+  ];
 
-    let selectors = [
-      '#page-channel'
-    ];
+  if (selectors.some(selector => document.querySelector(selector))) {
+    let hNameText = document.querySelector('#h-name').textContent;
+    let breadcrumbText = document.querySelector('.breadcrumb>.item.cur').textContent;
+    document.title = '@ kjkj lblb @' + hNameText + ' ' + breadcrumbText;
 
-    if (selectors.some(selector => document.querySelector(selector))) {
-      let hNameText = document.querySelector('#h-name').textContent;
-      let breadcrumbText = document.querySelector('.breadcrumb>.item.cur').textContent;
-      document.title = '@ kjkj lblb @' + hNameText + ' ' + breadcrumbText;
-
-    }
   }
+}
 
-  aaaaaaaa();
-
-  setTimeout(aaaaaaaa, 4000);
-  setTimeout(aaaaaaaa, 8000);
-
-  document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-      setTimeout(aaaaaaaa, 1000);
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.altKey) {
-      aaaaaaaa();
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey) {
-      aaaaaaaa();
-    }
-  });
-
-})();
+aaaaaaaa();
+setTimeout(aaaaaaaa, 4000);
+setTimeout(aaaaaaaa, 8000);
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    setTimeout(aaaaaaaa, 1000);
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.altKey) {
+    aaaaaaaa();
+  }
+});
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey) {
+    aaaaaaaa();
+  }
+});

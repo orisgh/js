@@ -25,9 +25,11 @@
 
 
 // ==/UserScript==
+
 /*
 // @match              
 */
+
 let url = new URL(window.location.href);
 url.search = '';
 let pathParts = url.pathname.split('/');
